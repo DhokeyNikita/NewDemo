@@ -67,6 +67,16 @@ public class FirstMavenDemo {
 			break;
 
 		}
+		
+		WebElement newLink = driver.findElement(By.xpath("//h3[@id='video-title']"));
+		
+		if(newLink.isDisplayed())
+		{
+			Thread.sleep(2000);
+			newLink.click();
+			System.out.println(newLink+" Opening... ");
+			Thread.sleep(2000);
+		}
 	}
 
 }
