@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ecwAT" configfailurepolicy="continue">
+	<!-- Suite -->
+	<!-- If required try retry anyalzer listeners -->
+	<test name="HPI - set 3">
+
+		<classes>
+			<class
+				name="NewProject.MavenDemo.FirstMavenDemo" />
+
+		</classes>
+	</test>
+</suite>
