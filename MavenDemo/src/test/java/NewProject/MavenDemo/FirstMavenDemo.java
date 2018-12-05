@@ -21,7 +21,7 @@ public class FirstMavenDemo {
 	public void beforeMethod() {
 
 		System.out.println("Before method");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikhil\\git\\ecwautomation\\DemoProject\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikhil\\git\\NewDemo\\MavenDemo\\Drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		log.info("Opening browser...");
 		driver.manage().window().maximize();
