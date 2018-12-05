@@ -74,7 +74,8 @@ public class FirstMavenDemo {
 		{
 			Thread.sleep(2000);
 			newLink.click();
-			System.out.println(newLink+" Opening... ");
+			String str1 = newLink.getText();
+			System.out.println(str1+" Opening... ");
 			Thread.sleep(2000);
 		}
 	}
