@@ -41,6 +41,7 @@ public class FirstMavenDemo {
 	{
 		driver.get("https://www.youtube.com");
 		log.info("Opening Youtube page...");
+		System.out.println("Opening Youtube page...");
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -49,6 +50,7 @@ public class FirstMavenDemo {
 		WebElement email = driver.findElement(By.xpath("//div[@id='search-input']//input"));
 		email.sendKeys("jenkins pipeline tutorial");
 		log.info("Search... ");
+		System.out.println("Search... ");
 		Thread.sleep(2000);
 
 		List<WebElement> ele = driver.findElements(By.xpath("//ul[@role='listbox']"
