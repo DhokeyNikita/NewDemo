@@ -15,13 +15,14 @@ import org.testng.annotations.Test;
 public class FirstMavenDemo {
 
 	public WebDriver driver;
-	Logger log = Logger.getLogger("Test2");
+	Logger log = Logger.getLogger("FirstMavenDemo");
 
 	@BeforeMethod
 	public void beforeMethod() {
 
 		System.out.println("Before method");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nikhil\\git\\ecwautomation\\DemoProject\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\Nikhil\\git\\NewDemo\\MavenDemo\\Drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		log.info("Opening browser...");
 		driver.manage().window().maximize();
@@ -63,8 +64,31 @@ public class FirstMavenDemo {
 			element.click();
 			Thread.sleep(3000);
 			break;
-
+			
 		}
+		
+		WebElement newLink = driver.findElement(By.xpath("//h3[@id='video-title']"));
+		
+		if(newLink.isDisplayed())
+		{
+			Thread.sleep(2000);
+			newLink.click();
+			String str1 = newLink.getText();
+			System.out.println(str1+" Opening... ");
+			Thread.sleep(2000);
+		}
+		
 	}
+	
+	
+	//MavenDemo\pom.xml
+	
+	
+	
+	
+	
+	
+	
+	//
 
 }
